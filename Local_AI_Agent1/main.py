@@ -12,5 +12,11 @@ Here is the question to answer: {question}.
 prompt = ChatPromptTemplate.from_template(template)
 chain = prompt | model
 
-result = chain.invoke({"reviews" : [], "question" : "What is the best pizza place in town?"})
-print(result)
+while True:
+    print("\n------------------")
+    question = input("Hey there! I am Agent4 \nAsk any question about our restaurant, I am here to help you. \nType 'q' to exit this chat. \nType below: \n")
+    print("\n")
+    if question == 'q':
+        break
+    result = chain.invoke({"reviews" : [], "question" : "What is the best pizza place in town?"})
+    print(result)
