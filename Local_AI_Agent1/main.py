@@ -20,5 +20,5 @@ while True:
     if question == 'q':
         break
     reviews = retriever.invoke(question)
-    result = chain.invoke({"reviews" : reviews, "question" : "What is the best pizza place in town?"})
+    result = chain.invoke({"reviews" : reviews, "question" : question})
     print(result)
