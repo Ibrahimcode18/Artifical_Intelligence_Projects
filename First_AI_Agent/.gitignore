@@ -1,0 +1,15 @@
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environments
+venv2/
+venv/
+env/
+
+# Vector Database
+chroma_db/
+
+# Environment Variables (Highly recommended for API keys)
+.env
