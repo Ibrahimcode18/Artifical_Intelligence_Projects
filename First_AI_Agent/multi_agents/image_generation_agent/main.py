@@ -2,7 +2,7 @@
 
 import asyncio
 
-from workflow_plus_agent import run_image_generation_workflow
+from workflow_and_agent import run_image_generation_workflow
 
 async def start_chat():
     print("Welcome to the Image Generation Portal!")
